@@ -1,5 +1,5 @@
 import { MongoClient } from 'mongodb'
-const url = 'mongodb://localhost:27017/reactdatabase';
+const url = process.env.MONGODB_URI || 'mongodb://localhost:27017/reactdatabase';
 
 let db = null;
 
